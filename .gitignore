@@ -1,0 +1,6 @@
+.DS_Store
+*swp
+*.Rproj
+.Rproj.user
+.Rhistory
+working
