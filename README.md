@@ -17,6 +17,15 @@ I’ve adapted the code to suit my needs:
   - Support for the `bit` class from the `bit` package.
   - Support for aligned searches
 
+## Installation
+
+You can install minilocate from github with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("coolbutuseless/minilocate")
+```
+
 ## Examples
 
 ``` r

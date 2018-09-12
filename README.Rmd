@@ -7,6 +7,10 @@ output:
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, echo = FALSE}
+suppressPackageStartupMessages({
+  library(minilocate)
+})
+
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -32,6 +36,17 @@ I've adapted the code to suit my needs:
 
 * Support for the `bit` class from the `bit` package.
 * Support for aligned searches
+
+
+Installation
+------------------------------------------------------------------------------
+
+You can install minilocate from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("coolbutuseless/minilocate")
+```
 
 
 Examples
