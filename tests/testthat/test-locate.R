@@ -44,3 +44,34 @@ test_that("locate with alignment works", {
   expect_equal(NA_integer_, locate( 2:3, 1:10, alignment=4))
   expect_equal(9          , locate(9:10, 1:10, alignment=4))
 })
+
+
+
+test_that("NA if needle longer than haystack", {
+  expect_identical(locate(1:10, 1:3), NA_integer_)
+})
+
+
+
+test_that("'bit' searches initialised correctly", {
+  needle   <- bit::as.bit(c(TRUE, FALSE))
+  haystack <- bit::as.bit(c(FALSE, TRUE, FALSE))
+  res <- locate(needle, haystack)
+  expect_identical(res, 2L)
+})
+
+
+
+test_that("locate_next works", {
+
+  haystack <- c(T, T, F, T, F, F, T, T, F, T, T)
+  needle   <- c(TRUE, FALSE, TRUE)
+
+  expect_identical(locate_next(needle, haystack, start = 1), 2L)
+  expect_identical(locate_next(needle, haystack, start = 3), 8L)
+  expect_identical(locate_next(needle, haystack, start = 9), NA_integer_)
+
+})
+
+
+

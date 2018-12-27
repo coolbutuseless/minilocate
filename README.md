@@ -1,6 +1,14 @@
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ## minilocate
+
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/coolbutuseless/minilocate?branch=master&svg=true)](https://ci.appveyor.com/project/coolbutuseless/minilocate)
+[![Travis build
+status](https://travis-ci.org/coolbutuseless/minilocate.svg?branch=master)](https://travis-ci.org/coolbutuseless/minilocate)
+[![Coverage
+status](https://codecov.io/gh/coolbutuseless/minilocate/branch/master/graph/badge.svg)](https://codecov.io/github/coolbutuseless/minilocate?branch=master)
 
 The goal of minilocate is to provide a way to search for a vector within
 another vector i.e. to find a needle in a haystack.
